@@ -1,71 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>team page challenge</title>
-  </head>
-  <body>
-    <div class="container flex mt-24">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>team page challenge</title>
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto mt-24 px-4 sm:px-6 lg:px-8">
+    <!-- Titre, sous-titre et paragraphe alignés horizontalement pour les tailles MD et supérieures -->
+    <div class="flex flex-col md:flex-row md:justify-center items-center text-center">
+      <h1 class="text-4xl font-bold mb-4 md:mr-4">The creative crew</h1>
       <div>
-        <h1 class="text-[30px] font-bold ml-72">The creative crew</h1>
-      </div>
-      <div class="ml-auto mr-24">
-        <h1 class="text-[30px] font-medium">WHO WE ARE</h1>
-        <P>We are team of creatively of diverse. driven.<br>
-          innovation individuals working in various<br>
-          locations from world.
-        </P>
+        <h2 class="text-xl font-medium mb-2">WHO WE ARE</h2>
+        <p>We are a team of creatively diverse, driven,<br>
+        innovative individuals working in various<br>
+        locations around the world.</p>
       </div>
     </div>
-    <div class="flex items-start justify-center space-x-8 mt-8">
-      <!-- Première paire image/texte -->
-      <div class="flex items-center">
-        <img src="public/photo1.png" alt="Bill Mohoney" class="w-44 h-64">
-        <span class="text-rotate ml-2 mt-[-120px]">PRODUCT OWNER</span>
-      </div>  
-      <!-- Deuxième paire image/texte -->
-      <div class="flex items-center" style="margin-top: 50px;"> <!-- Modifiez la valeur de la marge selon vos besoins -->
-        <img src="public/photo2.png" alt="Second Person" class="w-44 h-64">
-        <span class="text-rotate ml-2 mt-[-150px]">ART DIRECTOR</span> <!-- Utilisez une marge positive pour déplacer vers le bas -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
+      <!-- Première série -->
+      <div class="flex flex-col items-center">
+        <div class="flex items-center">
+          <img src="public/photo1.png" alt="Bill Mohoney" class="w-44 h-64">
+          <span class="text-rotate ml-2 mt-4">PRODUCT OWNER</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="font-semibold mt-3">Bill GATH</p>
+        </div>
       </div>
     
-      <!-- Troisième paire image/texte -->
-      <div class="flex items-center">
-        <img src="public/photo3.png" alt="Third Person" class="w-44 h-64">
-        <span class="text-rotate ml-2 mt-[-170px]">TECH LEAD</span>
-      </div>  
-    </div> 
-    <p class="ml-96 font-semibold mt-[-40px]">Bill GATH</p>  
-    <p class="text-center mt-[20px] font-semibold">Steev Jobs</p>     
-    <p class="font-semibold flex justify-end mr-96 mt-[-70px]">Harry Potter</p>  
-    <div class="flex items-start justify-center space-x-8 mt-8">
-      <!-- Première paire image/texte -->
-      <div class="flex items-center">
+      <div class="flex flex-col items-center">
+        <div class="flex items-center lg:mt-20 sm:mt-10">
+          <img src="public/photo2.png" alt="Second Person" class="w-44 h-64">
+          <span class="text-rotate ml-2">PRODUCT OWNER</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="font-semibold mt-3">Steev Jobs</p>
+        </div>
+      </div>
+    
+      <div class="flex flex-col items-center">
+        <div class="flex items-center">
+          <img src="public/photo3.png" alt="Third Person" class="w-44 h-64">
+          <span class="text-rotate ml-2">PRODUCT OWNER</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="font-semibold mt-3">Harry Potter</p>
+        </div>
+      </div>
+      <!-- Répétez ce modèle pour chaque image -->
+      <!-- Première série -->
+      <div class="flex flex-col items-center s">
+        <div class="flex items-center lg:mt-0 sm:mt-10">
           <img src="public/photo4.png" alt="Bill Mohoney" class="w-44 h-64">
-          <span class="text-rotate ml-2 mt-[-120px]">UX DESIGNER</span>
+          <span class="text-rotate ml-2">PRODUCT OWNER</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="font-semibold mt-3">Bill GATH</p>
+        </div>
       </div>
-  
-      <!-- Deuxième paire image/texte -->
-      <div class="flex items-center" style="margin-top: 50px;">
-          <img src="public/photo5.png" alt="image" class="w-44 h-64">
-          <span class="text-rotate ml-2 mt-[-150px]">DEVELOPER</span>
+    
+      <div class="flex flex-col items-center">
+        <div class="flex items-center lg:mt-20 sm:mt-05">
+          <img src="public/photo5.png" alt="Second Person" class="w-44 h-64">
+          <span class="text-rotate ml-2">PRODUCT OWNER</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="font-semibold mt-3">Steev Jobs</p>
+        </div>
       </div>
-  
-      <!-- Troisième paire image/texte -->
-      <div class="flex items-center">
-          <img src="public/photo6.png" alt="image" class="w-44 h-64">
-          <span class="text-rotate ml-2 mt-[-170px]">DEVELOPER</span>
+    
+      <div class="flex flex-col items-center sm:mt-0">
+        <div class="flex items-center lg:mt-0 sm:mt-10">
+          <img src="public/photo6.png" alt="Third Person" class="w-44 h-64">
+          <span class="text-rotate ml-2">PRODUCT OWNER</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="font-semibold mt-3">Harry Potter</p>
+        </div>
       </div>
-    </div>  
-    <p class="ml-96 font-semibold mt-[-40px]">Skylah Lu</p>  
-    <p class="text-center mt-[20px] font-semibold">Griff Richards</p>    
-    <p class="font-semibold flex justify-end mr-96 mt-[-70px]">Stan John</p>
+    </div>                            
     <div class="text-center mt-20">
-      <a><p class="opacity-50">created by <span class="underline underline-offset-2">username</span>-devChallenge.io</p></a>
-    </div>                                
-  </body>
+      <p class="opacity-50">created by <span class="underline underline-offset-2">username</span>-devChallenge.io</p>
+    </div>
+  </div>
+</body>
 </html>
